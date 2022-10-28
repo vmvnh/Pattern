@@ -1,3 +1,5 @@
+package org.yar;
+
 import org.junit.jupiter.api.Test;
 
 class MainTest {
