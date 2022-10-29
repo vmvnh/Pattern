@@ -3,9 +3,9 @@ FROM maven:3-jdk-8-alpine AS build
 
 
 # Copy folder in docker
-WORKDIR /opt/app
+WORKDIR /var/jenkins_home/workspace/app2
 
-COPY ./ /opt/app
+COPY . /var/jenkins_home/workspace/app2
 RUN mvn clean install -DskipTests
 
 
