@@ -3,9 +3,9 @@ FROM maven:3-jdk-8-alpine AS build
 
 
 # Build Stage
-WORKDIR /opt/app
+WORKDIR /home
 
-COPY ./ /opt/app
+COPY ./ /home
 RUN mvn clean install -DskipTests
 
 
