@@ -1,5 +1,5 @@
 node {
-    def WORKSPACE = "/java"
+    def WORKSPACE = "/home"
     def dockerImageTag = "spring-boot-docker${env.BUILD_NUMBER}"
 
 try{
